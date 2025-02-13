@@ -11,8 +11,31 @@ const useStateHook = () => {
         }}
       >
         Ulaan
+      </button>;
+      <button
+        className="border bg-blue-800 py-4 ps-6"
+        onClick={() => {
+          setColor("blue");
+        }}
+      >
+        Tsenher
+      </button>;
+      <button
+        className="border bg-green-800 py-4 ps-6"
+        onClick={() => {
+          setColor("green");
+        }}
+      >
+        Nogoon
       </button>
-      {color == "red" ? null : color == "blue" ? null : color== "green" ? null: <button>hll</button> }
+      {color == "red" ? null : <button
+        className="border bg-blue-800 py-4 ps-6"
+        onClick={() => {
+          setColor("blue");
+        }}
+      >
+        Tsenher
+      </button> }
 
       <button
         className="border bg-white py-4 ps-6"
